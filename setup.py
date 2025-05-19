@@ -1,0 +1,18 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="big_query",
+    version="0.1.0",
+    packages=find_packages(),
+    install_requires=[
+        "pandas",
+        "google-cloud-bigquery",
+        "google-auth"
+    ],
+    package_data={
+        "src.config": [""],
+    },
+    python_requires=">=3.7",
+    description="Paquete para la integración con Google BigQuery",
+    author="David Pérez"
+) 
