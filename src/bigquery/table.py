@@ -11,7 +11,7 @@ configuración si no se proporcionan.
 """
 
 import pandas as pd
-from src.config.config import cfg_item
+from config.config import cfg_item
 
 class Table:
     """
@@ -56,6 +56,8 @@ class Table:
         como un atributo de la instancia para facilitar su referencia.
         """
         schema = self.get_table_schema()
+        if schema is None:
+            return
         for column in schema:
             column_name = column['name']
             setattr(self, column_name, column_name)
