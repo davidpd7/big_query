@@ -13,14 +13,20 @@ Paquete para la integración con Google BigQuery que proporciona funcionalidades
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/davidpd997/big_query.git
+git clone https://github.com/davidpd7/big_query.git
 cd big_query
 
 # Instalar el paquete
-pip install -e https://github.com/davidpd997/big_query.git
+pip install -e .
 ```
 
-### Opción 2: Instalación con pip
+### Opción 2: Instalación directa con pip
+
+```bash
+pip install git+https://github.com/davidpd7/big_query.git
+```
+
+### Opción 3: Instalación con requirements.txt
 
 ```bash
 pip install -r requirements.txt
